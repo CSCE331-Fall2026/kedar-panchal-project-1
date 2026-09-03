@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title>Portfolio - Kedar Panchal</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    </head>
+
+    <body>
+        <!-- This is a navbar that will be present on all pages of the website. -->
+        <!-- TODO: When I'm allowed to use CSS and JS, replace with a web component -->
+        <span>
+            <a href="index.html" target="_self">Kedar Panchal</a> | 
+            <a href="portfolio.html" target="_self"><strong>Portfolio</strong></a> | 
+            <a href="activities.html" target="_self">Activities</a> | 
+            <a href="genai.html" target="_self">AI-Generated Page</a>
+        </span>
+        <h1>Resume</h1>
+        <object data="assets/pdf/resume.pdf" type="application/pdf" width="100%" height="600px">
+            <iframe src="assets/pdf/resume.pdf" width="100%" height="800px">
+                Your browser does not support iframes. Please download the PDF to view it: 
+                <a href="assets/pdf/resume.pdf">Download PDF</a>.
+            </iframe>
+        </object>
+        <h1>Portfolio and Qualifications</h1>
+        <details>
+            <summary>Technical Skills</summary>
+            I have experience in a variety of programming languages, frameworks,
+            and tools across multiple domains.<br><br>
+
+            I have experience in programming languages such as Python, C/C++, 
+            Java, TypeScript, JavaScript, Bash, and HTML/CSS. I've used these
+            languages along with frameworks and libraries such as React, 
+            FastAPI, Next.js, LangGraph, PyTorch, and CGAL.<br><br>
+
+            The tools I use in my work include Git, GitHub, and GitLab for 
+            version control; Docker and Podman for containerization; GitHub
+            Actions, GitLab CI/CD, and Ansible (with Linux) for automation;
+            Redis and PostgreSQL for database management; and Vim, VS Code, and
+            IntelliJ IDEA for development.
+        </details>
+        <details>
+            <summary>Areas of Interest</summary>
+            I'm still exploring my interests in computer science, but I have a
+            strong interest in robotics, software engineering, and artificial 
+            intelligence, with a budding interest in cryptography as well.<br><br>
+
+            My focus in robotics is on multi-robot coverage algorithms, with my
+            current research at the Distributed AI and Robotics Lab (DAIR) at 
+            Texas A&M focusing on this subdomain. Most of my personal projects
+            are software-oriented and use artificial intelligence for practical
+            use cases that encompass the needs of many users. 
+        </details>
+        <details>
+            <summary>Projects</summary>
+            <h3>IMC Prosperity 4</h3>
+            I analyzed commodity price data in a simulated competition with over
+            18,800 teams by building a dashboard with Python and Matplotlib.
+            The dashboard classified competing informed traders and detected 
+            outliers by implementing k-means clustering and isolation forest 
+            algorithms. The dashboard also had filtering features using Fourier
+            transforms and Haar wavelet transforms to denoise noisy time-series
+            data.
+
+            <h3>Mr. Breathe</h3>
+            My team and I developed an intelligent spirometer that detected and
+            classified respiratory diseases. The spirometer used an Arduino to
+            collect breath data and interfaced with a Swift iOS app for 
+            real-time data analysis using custom bluetooth code. The app stored
+            its data using a PostreSQL database accessible through a Spring 
+            Boot backend.
+
+            <h3>Hello World From Scratch</h3>
+            As a part of Texas A&M's CSCE 120 course, my team and I developed a
+            bare-metal bootloader running on a virtualized ARM Cortex A53. The
+            bootloader loaded and executed a "Hello, World!" program from the 
+            disk. My role in the grou pwas developing the FAT32 filesystem and
+            VirtIO disk drivers, which allowed the bootloader to read and 
+            execute the program from disk.
+
+            <h3>GIMP AI Inpainter</h3>
+            I developed a GIMP plugin that interfaced with a local diffusion 
+            model to add AI editing capabilities to the editor. Users could 
+            select an area of an image to inpaint and supply a text promp to 
+            guide the inpainting process. The plugin would then run the 
+            diffusion model locally and return the inpainted image to the user.
+        </details>
+    </body>
+</html>
